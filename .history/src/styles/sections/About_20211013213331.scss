@@ -1,0 +1,28 @@
+@import "../utils/Colors.scss";
+.about-container {
+    background-color: #efe8ff;
+    .container {
+      margin: 0 10%;
+      padding: 5rem 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      .details {
+        p {
+          color: $lightFontColor;
+          line-height: 1.3rem;
+          font-size: large;
+          text-align: justify;
+          width: 90%;
+        }
+        button {
+          margin-top: 3rem;
+        }
+      }
+      .cards {
+        // display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+  }

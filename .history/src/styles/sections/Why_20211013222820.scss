@@ -1,0 +1,63 @@
+@import "../utils/Colors.scss";
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .why-container {
+    .container {
+      .top {
+        .subTitle {
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .content {
+        grid-template-columns: 1fr;
+        .reasons {
+          ul {
+            li {
+              margin-bottom: 3rem;
+              font-size: 1.7rem;
+              &::before {
+                top: 0px;
+              }
+            }
+          }
+        }
+        .video {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .why-container {
+    .container {
+      .top {
+        .subTitle {
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .content {
+        .reasons {
+          ul {
+            li {
+              margin-bottom: 3rem;
+              font-size: 1.7rem;
+              &::before {
+                top: 0px;
+              }
+            }
+          }
+        }
+        .video {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
