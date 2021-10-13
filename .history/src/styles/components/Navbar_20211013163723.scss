@@ -1,0 +1,44 @@
+@import "../utils/Colors.scss";
+.navbar{
+    margin-top:2rem 0;
+    display: flex;
+    justify-content: space-between;
+    .col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .collapseble-button {
+          display: none;
+        }
+      }
+      nav{
+          .links{
+            ul {
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                justify-content: center;
+                margin: 0.3rem 2rem;
+                color: $lightFontColor;
+                li {
+                    a {
+                      text-decoration: none;
+                      font-size: 1.2rem;
+                      color: $blueColor;
+                      &:hover {
+                        color: $buttonPinkColor;
+                      }
+                      &:focus {
+                        color: $blueColor;
+                      }
+                      &:active {
+                        color: $blueColor;
+                      }
+                    }
+                    text-transform: uppercase;
+                    // margin: 0 1rem;
+                  }
+            }
+          }
+      }
+}

@@ -1,0 +1,23 @@
+@import "../utils/Colors.scss";
+.navbar{
+    margin-top:2rem 0;
+    display: flex;
+    justify-content: space-between;
+    .col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .collapseble-button {
+          display: none;
+        }
+      }
+      nav{
+          .links{
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+            }
+          }
+      }
+}

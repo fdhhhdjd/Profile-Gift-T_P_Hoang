@@ -1,0 +1,32 @@
+@import "../utils/Colors.scss";
+.navbar{
+    margin-top:2rem 0;
+    display: flex;
+    justify-content: space-between;
+    .col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .collapseble-button {
+          display: none;
+        }
+      }
+      nav{
+          .links{
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                margin: 0.3rem 2rem 0;
+                color: $lightFontColor;
+                li{
+                    a{
+
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+          }
+      }
+}
