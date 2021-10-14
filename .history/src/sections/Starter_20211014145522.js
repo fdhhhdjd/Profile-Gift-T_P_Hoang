@@ -36,7 +36,7 @@ export default function Starter() {
   }, []);
   useEffect(() => {
     lottie.loadAnimation({
-      container: gmail.current,
+      container: GiMailbox.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
@@ -83,7 +83,7 @@ export default function Starter() {
                 color="pink"
                 content="Email"
                 // icon={<AiOutlineMail />}
-                json={gmail}
+                json={email}
                 link="mailto:phihoang1107@gmail.com"
               />
             </div>

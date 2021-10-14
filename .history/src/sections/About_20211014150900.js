@@ -14,39 +14,15 @@ import lottie from "lottie-web";
 function About() {
   const [element, controls] = useScroll();
   const idea = useRef(null);
-  const plan = useRef(null);
-  const contact = useRef(null);
-  const help = useRef(null);
   useEffect(() => {
     lottie.loadAnimation({
-      container: idea.current,
+      container: container.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
       animationData: require("../Json/idea.json"),
     });
-    lottie.loadAnimation({
-      container: plan.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("../Json/plaing.json"),
-    });
-    lottie.loadAnimation({
-      container: contact.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("../Json/lienlac.json"),
-    });
-    lottie.loadAnimation({
-      container: help.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("../Json/24-7.json"),
-    });
-  }, []);
+  }, [visible]);
   return (
     <>
       <div className="about-container" id="about" ref={element}>
@@ -75,14 +51,22 @@ function About() {
           <div className="cards" ref={element}>
             <Card
               title="Ý tưởng sáng tạo"
-              json={idea}
+              logo={<HiLightBulb />}
               animateCustom={controls}
             />
-            <Card title="Lập kế hoạch" json={plan} animateCustom={controls} />
-            <Card title="Liên Lạc" json={contact} animateCustom={controls} />
+            <Card
+              title="Lập kế hoạch"
+              logo={<BsFillCalendarFill />}
+              animateCustom={controls}
+            />
+            <Card
+              title="Liên Lạc"
+              logo={<BiSupport />}
+              animateCustom={controls}
+            />
             <Card
               title="Giúp đỡ 24 * 7 "
-              json={help}
+              logo={<SiGooglemessages />}
               animateCustom={controls}
             />
           </div>

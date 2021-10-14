@@ -36,7 +36,7 @@ export default function Starter() {
   }, []);
   useEffect(() => {
     lottie.loadAnimation({
-      container: gmail.current,
+      container: GiMailbox.current,
       renderer: "svg",
       loop: true,
       autoplay: true,

@@ -50,7 +50,9 @@ function Why() {
             >
               <ul>
                 <li>Đang là sinh viên năm cuối IT trường Hutech</li>
-                <li>Cung cấp giải pháp cho bạn khi gặp khó khăn.</li>
+                <li>
+                  Cung cấp giải pháp cho nhiều khách hàng khi gặp khó khăn.
+                </li>
                 <li>Tôi là người sáng tạo và giúp đỡ bạn.</li>
                 <li>99% tuân thủ hợp đồng cấp dịch vụ</li>
                 <li>Sẵn sàng nhận yêu cầu dịch vụ 24/7</li>

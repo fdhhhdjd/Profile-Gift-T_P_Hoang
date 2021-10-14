@@ -9,13 +9,11 @@ import "../styles/sections/Starter.scss";
 import { headerAnimation, imageAnimation } from "../utils/Animations";
 import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 import lottie from "lottie-web";
-import { GiMailbox } from "react-icons/gi";
 
 export default function Starter() {
   const [element, controls] = useScroll();
   const container = useRef(null);
   const facebook = useRef(null);
-  const gmail = useRef(null);
   useEffect(() => {
     lottie.loadAnimation({
       container: facebook.current,
@@ -32,15 +30,6 @@ export default function Starter() {
       loop: true,
       autoplay: true,
       animationData: require("../Json/office.json"),
-    });
-  }, []);
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: gmail.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("../Json/gmail.json"),
     });
   }, []);
 
@@ -82,8 +71,7 @@ export default function Starter() {
               <Button
                 color="pink"
                 content="Email"
-                // icon={<AiOutlineMail />}
-                json={gmail}
+                icon={<AiOutlineMail />}
                 link="mailto:phihoang1107@gmail.com"
               />
             </div>
